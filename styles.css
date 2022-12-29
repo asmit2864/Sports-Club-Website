@@ -1,0 +1,479 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Front Page*/
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+nav{
+    display: flex;
+    padding:1% 6%;
+    justify-content:space-between;
+    align-items: center;
+}
+.navigation{
+    
+    text-align:right;
+}
+.navigation >ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    
+}
+.navigation >ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navigation >ul>li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background:red;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.navigation >ul>li:hover::after{
+    width:100%;
+}
+.text-box{
+    width: 90%;
+    color:white;
+    text-align: center;
+    margin: 160px 100px;
+}
+.text-box>h1{
+    font-size: 62px;
+}
+.text-box>p{
+    margin:17px 0 40px;
+    font-size: 14px;
+    color:white;
+}
+.button{
+    
+    text-decoration: none;
+    color: white;
+    border:1px solid white;
+    padding:12px 34px;
+    font-size: 13px;
+    background:transparent;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid red;
+    background:red;
+    transition:1s;
+}
+
+/*Clubs*/
+
+.clubs{
+    width: 85%;
+    margin:auto;
+    text-align: center;
+    padding-top:100px;
+   
+}
+h1{
+    font-size:36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding:10px;
+}
+.clubs-row{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.clubs-column{
+    flex-basis:24%;
+    border-radius:10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow:hidden;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+
+.layer:hover{
+    background: rgb(198, 41, 41,0.7);
+}
+.layer>a>h3{
+    width:100px; 
+    font-weight:500;
+    color:white;
+    font-size: 26px;
+    bottom:0;
+    left:29%;
+    position: absolute;
+    opacity:0;
+    transition: 0.5s;
+}
+.layer:hover>a>h3{
+    bottom:49%;
+    opacity:1;
+}
+
+
+/* facilities */
+
+.facilities{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-row{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.facilities-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    transition:0.5s;
+}
+.facilities-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.35);
+}
+.facilities-col>img{
+    width:100%;
+    border-radius: 10px;
+}
+.facilities-col>h3{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* Subscription */
+
+.subscribe{
+    margin: 100px auto;
+    width:80%;
+    background-image:url(banner.jpg);
+    background-position: top;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: left;
+    padding:100px 80px;
+}
+.subscribe>h1{
+    color: black;
+    margin-bottom: 40px;
+    padding:0;
+    font-size: 45px;
+
+}
+.button1{
+    
+    text-decoration: none;
+    color: white;
+    border:1px solid white;
+    padding:12px 50px;
+    font-size: 20px;
+    background:transparent;
+    cursor: pointer;
+    margin-left:250px;
+}
+.button1:hover{
+    border: 1px solid red;
+    background:red;
+    transition:1s;
+}
+
+/* footer */
+
+.footer{
+    width:100%;
+    text-align: center;
+    padding:30px 0;
+}
+.footer>h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* About us  */
+
+.sub-header{
+    height:35vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(about.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color: white;
+}
+
+/* about us content */
+
+.about-row{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.about{
+    width:80%;
+    margin:auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+.about-col>img{
+    width:100%;
+    border-radius: 10px;
+}
+.about-col>h1{
+    padding-top: 0;
+}
+.about-col>p{
+    padding:15px 0 25px;
+}
+.button-explore{
+    border:1px solid red;
+    background: transparent;
+    color:red;
+}
+.button-explore:hover{
+    color:white;
+}
+
+/* Contact us */
+
+.contact-row{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.contact{
+    width:80%;
+    margin:auto;
+}
+.contact-col{
+    flex-basis:48%;
+    margin-bottom:30px;
+}
+.contact-col1{
+    flex-basis:48%;
+    margin-bottom:30px;
+    margin-top: 75px;
+}
+
+.contact-col1>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col1>div>.fa{
+    font-size: 28px;
+    color: rgb(244, 67, 54);
+    margin:10px;
+    margin-right: 30px;
+}
+.contact-col1>div>span>p{
+    padding:0
+}
+.contact-col1>div>span>h5{
+    font-size:20px;
+    margin-bottom: 5px;
+    color:rgb(85, 85, 85);
+    font-weight: 400;
+}
+
+
+
+.contact-col>form>input, .contact-col>form>textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Join page */
+
+.form{
+    border:2px solid white;
+    width:60%;
+    border-radius: 20px 20px 0 0;
+    margin-left: 305px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    
+    
+}
+.form>form{
+    padding: 20px;
+}
+
+.form>form>input[type="text"],input[type="email"],input[type="tel"],input[type="date"],textarea{
+    width:100%;
+    border: #ddd solid 2px;
+    border-radius:10px 10px 10px 10px;
+   
+}
+.form>form>input[type="text"],input[type="date"],input[type="email"],input[type="tel"],textarea,select,input[type="checkbox"]{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.form>form>input[type="date"]{
+    width:30%;
+}
+.form>form>.gender-space{
+    margin-top:6px;
+    margin-bottom: 10px;
+}
+
+.form>form>input[placeholder]{
+    padding:10px;
+}
+.form>form>textarea{
+    padding:10px;
+}
+.form>form>label{
+    
+    color: black;
+    font-weight: bold;
+}
+.form>form>select{
+    height:5%;
+    width:20%;
+    border:#ddd solid 2px;
+    border-radius:10px 10px 10px 10px;
+}
+.joinbutton{
+    border: red solid 1px;
+    border-radius: 10px;
+    margin-top:10px;
+}
+
+
+/* FOOTBALL */
+
+.sub-header-f{
+    height:35vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(football2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color: white;
+}
+.about-col>ul>li{
+    margin:10px 10px 0 0;
+    list-style-type:circle;
+}
+.about-col>ul{
+    margin:15px 15px 0 0;
+}
+
+/* Badminton */
+
+.sub-header-b{
+    height:35vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(badminton3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color: white;
+}
+.about-col>ul>li{
+    margin:10px 10px 0 0;
+    list-style-type:circle;
+}
+.about-col>ul{
+    margin:15px 15px 0 0;
+}
+
+/* Voleyball*/
+
+.sub-header-v{
+    height:35vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(volleyball3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color: white;
+}
+.about-col>ul>li{
+    margin:10px 10px 0 0;
+    list-style-type:circle;
+}
+.about-col>ul{
+    margin:15px 15px 0 0;
+}
+
+/* Swimming*/
+
+.sub-header-s{
+    height:35vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(swimming2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color: white;
+}
+.about-col>ul>li{
+    margin:10px 10px 0 0;
+    list-style-type:circle;
+}
+.about-col>ul{
+    margin:15px 15px 0 0;
+}
+
+
+/* thanku 4 joining */
+
+.thanku4join{
+    width:90%;
+    border:2px solid white;
+    border-radius: 10px;
+    padding:10px;
+    margin-left: 60px;
+    color: rgb(21, 255, 0);
+    background-color: rgb(0, 0, 0,0.6);
+}

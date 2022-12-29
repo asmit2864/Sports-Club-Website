@@ -1,2 +1,3 @@
 # Sports-Club-Website
-This contains my first ever website on Sports Club.
+If opening with github link then ok.
+If downloading the files then paste all the files on Desktop otherwise the website will not work.
